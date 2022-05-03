@@ -5,8 +5,10 @@
 - Makefile
 	1. Norminette Rule {make norm}
 		> This runs Norminette with its flag (-R CheckForbiddenSourceHeader) when you run make on the file that you specify, you can enter nothing and it just runs it on all files in the same location as the Makefile.
+	2. Git Clone Rule {make git}
+		> This will output a prompt to specify the Git Repository, once filled it will then ask for the project's name (this is so you can have the proper folder name for more convenience when using multiple testers, e.g. cloning a get_next_line project but you've setup all the testers to use GNL as the path name, so you would want it to be called GNL)
 
-To run:
+To run Norm:
 
 ---
 
@@ -15,10 +17,7 @@ e.g. >make; outputs: "Specify the file on which to run Norm:" ./Hello/World/!.c 
 
 ---
 
-	2. Git Clone Rule {make git}
-		> This will output a prompt to specify the Git Repository, once filled it will then ask for the project's name (this is so you can have the proper folder name for more convenience when using multiple testers, e.g. cloning a get_next_line project but you've setup all the testers to use GNL as the path name, so you would want it to be called GNL)
-
-To run:
+To run Git:
 
 ---
 
